@@ -1,0 +1,10 @@
+applications:
+  - name: SoccerPlayerStats
+    memory: 768M
+    instances: 1
+    path: target\SoccerPlayerStats-0.0.1-SNAPSHOT.jar
+    random-route: true
+    services:
+      - mysqldb
+    buildpacks:
+      - https://github.com/cloudfoundry/java-buildpack.git
